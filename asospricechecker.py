@@ -29,14 +29,14 @@ def send_email():
     server.starttls()
     server.ehlo()
 
-    server.login('llanre.depy@gmail.com', 'Newking1!')
+    server.login('*********@gmail.com', 'password')
 
     subject = "Price gone down"
     body = "https://www.asos.com/nike-football/nike-football-strike-21-joggers-in-black-and-purple/prd/21304440?colourwayid=60155166&SearchQuery=nike%20joggers"
     msg = f"Subject:{subject}\n\n{body}"
 
-    server.sendmail('llanre.depy@gmail.com',
-                    'a.lanre11@yahoo.com', msg)
+    server.sendmail('*********@gmail.com',
+                    '*********@yahoo.com', msg)
 
     print("Hey, email has been sent!")
     server.quit()
